@@ -6,7 +6,7 @@ import { Colors } from "../utils/Colors";
 const Welcome = () => {
   return (
     <LinearGradient
-      style={{ flex: 1, justifyContent: "center", alignItems: "center" }}
+      style={{ flex: 1, justifyContent: "space-evenly", alignItems: "center" }}
       colors={[Colors.primary, Colors.secondary]}
     >
       <View
@@ -17,6 +17,7 @@ const Welcome = () => {
           borderRadius: 300,
           justifyContent: "center",
           alignItems: "center",
+          top:50,
         }}
       >
         <Image
@@ -33,6 +34,8 @@ const Welcome = () => {
             fontWeight: "bold",
             textAlign: "center",
             lineHeight: 40,
+            letterSpacing: 0,
+            top:-5,
           }}
         >
           Mos e le{"\n"} Pa e provu...
@@ -45,7 +48,7 @@ const Welcome = () => {
         }}
         style={{
           backgroundColor: "crimson",
-          width: 180,
+          width: 200,
           height: 55,
           padding: 10,
           borderRadius: 20,
@@ -54,7 +57,7 @@ const Welcome = () => {
         <Text
           style={{
             fontSize: 20,
-            color: Colors.primary,
+            color: "white",
             fontWeight: "bold",
             textAlign: "center",
             lineHeight: 30,
