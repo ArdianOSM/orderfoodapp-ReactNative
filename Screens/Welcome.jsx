@@ -2,8 +2,10 @@ import { View, Text, Image, TouchableOpacity } from "react-native";
 import React from "react";
 import { LinearGradient } from "expo-linear-gradient";
 import { Colors } from "../utils/Colors";
+import { useNavigation } from "@react-navigation/native";
 
 const Welcome = () => {
+  const nav = useNavigation();
   return (
     <LinearGradient
       style={{ flex: 1, justifyContent: "space-evenly", alignItems: "center" }}
@@ -17,7 +19,7 @@ const Welcome = () => {
           borderRadius: 300,
           justifyContent: "center",
           alignItems: "center",
-          top:50,
+          top: 50,
         }}
       >
         <Image
@@ -35,7 +37,7 @@ const Welcome = () => {
             textAlign: "center",
             lineHeight: 40,
             letterSpacing: 0,
-            top:-5,
+            top: -5,
           }}
         >
           Mos e le{"\n"} Pa e provu...
@@ -44,7 +46,7 @@ const Welcome = () => {
 
       <TouchableOpacity
         onPress={() => {
-          console.log("hello");
+          nav.navigate("Home");
         }}
         style={{
           backgroundColor: "crimson",
@@ -63,7 +65,7 @@ const Welcome = () => {
             lineHeight: 30,
           }}
         >
-          Regjistrohu
+          Get Started
         </Text>
       </TouchableOpacity>
     </LinearGradient>
