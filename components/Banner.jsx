@@ -27,7 +27,7 @@ const Banner = () => {
           </Text>
         </View>
 
-        <Image style={{width:100,height:100}} source={require('../assets/burgericon.png')}/>
+        <Image style={{width:100,height:100}} source={require('../assets/FrenchFries.png')}/>
       </View>
     </View>
   );

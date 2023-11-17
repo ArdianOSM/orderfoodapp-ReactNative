@@ -46,7 +46,7 @@ const Welcome = () => {
 
       <TouchableOpacity
         onPress={() => {
-          nav.navigate("Home");
+          nav.navigate("tabs");
         }}
         style={{
           backgroundColor: "crimson",

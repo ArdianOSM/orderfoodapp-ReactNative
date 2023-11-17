@@ -1,5 +1,7 @@
-import { View, Text, FlatList } from "react-native";
+import { View, Text, FlatList, Image } from "react-native";
 import React from "react";
+import { Colors } from "react-native/Libraries/NewAppScreen";
+import { Ionicons } from "@expo/vector-icons";
 
 const Fooditems = () => {
   const food = [
@@ -18,14 +20,14 @@ const Fooditems = () => {
         "https://th.bing.com/th/id/R.68c8fd61cc12558216118d5f63acab1e?rik=F8p%2fpUJpw8qWHQ&riu=http%3a%2f%2fwww.freepngimg.com%2fdownload%2fpizza%2f1-pizza-png-image.png&ehk=Rjht7VbDwkXxAFOZaa9t4Mz772mCESIFx6KBwuhPLXc%3d&risl=1&pid=ImgRaw&r=0",
     },
     {
-      id: 2,
+      id: 3,
       name: "Sandwich",
       price: 35.5,
       image:
         "https://th.bing.com/th/id/R.b90aa7070c260a0766aea7536e70bd83?rik=MpeGNzXR%2fzCnhg&pid=ImgRaw&r=0",
     },
     {
-      id: 1,
+      id: 4,
       name: "Burger",
       price: 100,
       image:
@@ -33,12 +35,54 @@ const Fooditems = () => {
     },
   ];
   return (
-    <View>
-      
-      </View>
-      
-      
-       </View>
+    <View style={{ gap: 15 }}>
+      <Text style={{ fontSize: 20, gap: 20 }}>Popular</Text>
+      <FlatList
+        showsHorizontalScrollIndicator={false}
+        horizontal
+        data={food}
+        renderItem={({ item, index }) => (
+          <View
+            style={{
+              backgroundColor: "#E3E3E3",
+              width: 150,
+              height: 200,
+              marginRight: 20,
+              borderRadius: 20,
+              paddingHorizontal: 20,
+
+              paddingVertical: 20,
+              gap: 10,
+            }}
+          >
+            <Image
+              style={{ width: 85, height: 85, alignSelf: "center" }}
+              source={require("../assets/burgericon.png")}
+            />
+            <Text style={{ fontSize: 20, textAlign: "center" }}>
+              {item.name}
+            </Text>
+            <View
+              style={{
+                flexDirection: "row",
+                justifyContent: "space-between",
+                alignItems: "center",
+              }}
+            >
+              <Text
+                style={{
+                  color: Colors.primary,
+                  fontWeight: "bold",
+                  fontSize: 18,
+                }}
+              >
+                €{item.price}
+              </Text>
+              <Ionicons name="add-circle" size={24} color="green" />
+            </View>
+          </View>
+        )}
+      />
     </View>
   );
 };

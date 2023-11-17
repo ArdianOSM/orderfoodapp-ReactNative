@@ -1,4 +1,4 @@
-import { View, Text, SafeAreaView } from "react-native";
+import { View, Text, SafeAreaView, ScrollView } from "react-native";
 import React from "react";
 
 import Header from "../components/Header";
@@ -10,7 +10,8 @@ import Fooditems from "../components/Fooditems";
 
 const Home = () => {
   return (
-    <View
+    <ScrollView
+      showsVerticalScrollIndicator={false}
       style={{
         flex: 1,
         paddingHorizontal: 25,
@@ -21,10 +22,10 @@ const Home = () => {
         <Header />
         <Search />
         <Category />
-        <Banner/>
-        <Fooditems/>
+        <Banner />
+        <Fooditems />
       </SafeAreaView>
-    </View>
+    </ScrollView>
   );
 };
 
