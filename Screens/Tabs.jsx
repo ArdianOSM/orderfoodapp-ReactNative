@@ -6,8 +6,7 @@ import Searches from "./Searches";
 import Profile from "./Profile";
 import Cart from "./Cart";
 import { Ionicons } from "@expo/vector-icons";
-import { Foundation } from '@expo/vector-icons';
-
+import { Foundation } from "@expo/vector-icons";
 
 const Tab = createBottomTabNavigator();
 const Tabs = () => {
@@ -15,7 +14,7 @@ const Tabs = () => {
     <Tab.Navigator
       screenOptions={{
         tabBarShowLabel: false,
-        headerShown:false,
+        headerShown: false,
       }}
     >
       <Tab.Screen
@@ -24,8 +23,14 @@ const Tabs = () => {
         options={{
           tabBarIcon: ({ focused }) =>
             focused ? (
-                <View style={{backgroundColor:colorful.primary,width:35,height:35,}}>
-              <Ionicons name="md-home" size={24} color="black" />
+              <View
+                style={{
+                  backgroundColor:'',
+                  width: 35,
+                  height: 35,
+                }}
+              >
+                <Ionicons name="md-home" size={24} color="black" />
               </View>
             ) : (
               <Ionicons name="md-home-outline" size={24} color="grey" />
@@ -38,9 +43,9 @@ const Tabs = () => {
         options={{
           tabBarIcon: ({ focused }) =>
             focused ? (
-                <Ionicons name="search" size={24} color="black" />
+              <Ionicons name="search" size={24} color="black" />
             ) : (
-                <Ionicons name="search" size={24} color="grey" />
+              <Ionicons name="search" size={24} color="grey" />
             ),
         }}
       />
@@ -50,9 +55,9 @@ const Tabs = () => {
         options={{
           tabBarIcon: ({ focused }) =>
             focused ? (
-                <Foundation name="shopping-cart" size={24} color="black" />
+              <Foundation name="shopping-cart" size={24} color="black" />
             ) : (
-                <Foundation name="shopping-cart" size={24} color="grey" />
+              <Foundation name="shopping-cart" size={24} color="grey" />
             ),
         }}
       />
@@ -62,9 +67,9 @@ const Tabs = () => {
         options={{
           tabBarIcon: ({ focused }) =>
             focused ? (
-                <Ionicons name="ios-person" size={24} color="black" />
+              <Ionicons name="ios-person" size={24} color="black" />
             ) : (
-                <Ionicons name="ios-person-outline" size={24} color="grey" />
+              <Ionicons name="ios-person-outline" size={24} color="grey" />
             ),
         }}
       />
