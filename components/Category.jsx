@@ -26,16 +26,17 @@ const Category = () => {
             setselected(index);
           }}
           activeOpacity={0.9}
-          style={{ margin: 10 }}
+          style={{ margin: 10, }}
         >
           <View
             style={{
               width: 70,
-              height: 80,
+              height: 70,
               backgroundColor: selected === index ? Colors.primary : "#E3E3E3",
               justifyContent: "center",
               alignItems: "center",
               borderRadius: 40,
+              gap:50,
             }}
           >
             <Image

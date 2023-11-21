@@ -12,6 +12,7 @@ const Search = () => {
         flexDirection: "row",
         alignItems: "center",
         paddingHorizontal: 15,
+        
       }}
     >
       <Feather name="search" size={24} color="black" />

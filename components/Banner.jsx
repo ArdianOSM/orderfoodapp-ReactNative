@@ -4,13 +4,13 @@ import { Colors } from "react-native/Libraries/NewAppScreen";
 
 const Banner = () => {
   return (
-    <View style={{ gap: 20 }}>
+    <View style={{ gap: 35 }}>
       <Text style={{ fontSize: 20, }}>Promocion!!</Text>
       <View
         style={{
           backgroundColor: Colors.primary,
           height: 150,
-          borderRadius: 15,
+          borderRadius: 30,
           paddingHorizontal: 20,
           flexDirection: "row",
           paddingVertical: 20,

@@ -7,8 +7,9 @@ const Header = () => {
       style={{
         flexDirection: "row",
         justifyContent: "space-between",
-
+        height:50,
         alignItems: "center",
+        
       }}
     >
       <Text style={{ fontSize: 35 }}>Menu</Text>
@@ -18,7 +19,8 @@ const Header = () => {
           height: 40,
           borderRadius: 30,
           alignItems: "center",
-          justifyContent: "center", }}
+          justifyContent: "center",
+         }}
       />
     </View>
   );
