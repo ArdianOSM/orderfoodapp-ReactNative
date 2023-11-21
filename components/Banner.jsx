@@ -5,7 +5,7 @@ import { Colors } from "react-native/Libraries/NewAppScreen";
 const Banner = () => {
   return (
     <View style={{ gap: 15,height:215}}>
-      <Text style={{ fontSize: 20,fontWeight:'bold'  }}>Promocion!!</Text>
+      <Text style={{ fontSize: 20,fontWeight:'bold',color:'orange'  }}>Promocion!!</Text>
       <View
         style={{
           backgroundColor: Colors.primary,

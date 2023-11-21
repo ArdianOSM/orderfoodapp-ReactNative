@@ -43,7 +43,7 @@ const Fooditems = () => {
   return (
     <View style={{ gap: 30 }}>
 
-      <Text style={{ fontSize: 20,  }}>Popular</Text>
+      <Text style={{ fontSize: 20,fontWeight:'bold',color:'green',  }}>Popular!!!</Text>
       <FlatList
         showsHorizontalScrollIndicator={false}
         horizontal
