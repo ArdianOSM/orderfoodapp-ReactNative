@@ -25,7 +25,7 @@ const Banner = () => {
             French Fries Falas!
           </Text>
           <Text style={{ fontSize: 15, color: "white" }}>
-            Te Gjitha Porosit mbi 150euro!{" "}
+            Te Gjitha Porosit mbi 20euro!
           </Text>
         </View>
 

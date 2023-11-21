@@ -1,5 +1,6 @@
 import { View, Text, Image } from "react-native";
 import React from "react";
+import { Colors } from "react-native/Libraries/NewAppScreen";
 
 const Header = () => {
   return (
@@ -13,7 +14,7 @@ const Header = () => {
         
       }}
     >
-      <Text style={{ fontSize: 35, }}>Menu</Text>
+      <Text style={{ fontSize: 35,fontWeight:'bold',color:Colors.primary }}>Menu</Text>
       <Image
         source={require("../assets/lady.jpg")}
         style={{ width: 40,

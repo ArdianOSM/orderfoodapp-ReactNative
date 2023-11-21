@@ -71,7 +71,7 @@ const Fooditems = () => {
               style={{ width: 85, height: 85, alignSelf: "center" ,gap:20 }}
               source={require("../assets/burgericon.png")}
             />
-            <Text style={{ fontSize: 20, textAlign: "center" }}>
+            <Text style={{ fontSize: 20, textAlign: "center",fontWeight:'bold',color:'orange' }}>
               {item.name}
             </Text>
             <View
