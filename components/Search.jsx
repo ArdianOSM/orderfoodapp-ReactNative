@@ -11,7 +11,7 @@ const Search = () => {
         borderRadius: 50,
         flexDirection: "row",
         alignItems: "center",
-        paddingHorizontal: 15,
+        paddingHorizontal: 15
         
       }}
     >

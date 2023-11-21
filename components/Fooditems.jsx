@@ -41,7 +41,7 @@ const Fooditems = () => {
     },
   ];
   return (
-    <View style={{ gap: 50 }}>
+    <View style={{ gap: 30 }}>
 
       <Text style={{ fontSize: 20,  }}>Popular</Text>
       <FlatList

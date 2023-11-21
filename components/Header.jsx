@@ -7,12 +7,13 @@ const Header = () => {
       style={{
         flexDirection: "row",
         justifyContent: "space-between",
-        height:50,
+        height:80,
         alignItems: "center",
+        
         
       }}
     >
-      <Text style={{ fontSize: 35 }}>Menu</Text>
+      <Text style={{ fontSize: 35, }}>Menu</Text>
       <Image
         source={require("../assets/lady.jpg")}
         style={{ width: 40,
