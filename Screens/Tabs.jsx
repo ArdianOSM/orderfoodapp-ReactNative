@@ -7,6 +7,7 @@ import Profile from "./Profile";
 import Cart from "./Cart";
 import { Ionicons } from "@expo/vector-icons";
 import { Foundation } from "@expo/vector-icons";
+import { Colors } from "react-native/Libraries/NewAppScreen";
 
 const Tab = createBottomTabNavigator();
 const Tabs = () => {
@@ -25,12 +26,15 @@ const Tabs = () => {
             focused ? (
               <View
                 style={{
-                  backgroundColor:'',
-                  width: 35,
-                  height: 35,
+                  backgroundColor: Colors.primary,
+                  width: 40,
+                  height: 40,
+                  borderRadius: 30,
+                  alignItems: "center",
+                  justifyContent: "center",
                 }}
               >
-                <Ionicons name="md-home" size={24} color="black" />
+                <Ionicons name="md-home" size={24} color="white" />
               </View>
             ) : (
               <Ionicons name="md-home-outline" size={24} color="grey" />
@@ -43,7 +47,18 @@ const Tabs = () => {
         options={{
           tabBarIcon: ({ focused }) =>
             focused ? (
-              <Ionicons name="search" size={24} color="black" />
+              <View
+                style={{
+                  backgroundColor: Colors.primary,
+                  width: 40,
+                  height: 40,
+                  borderRadius: 30,
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <Ionicons name="search" size={24} color="white" />
+              </View>
             ) : (
               <Ionicons name="search" size={24} color="grey" />
             ),
@@ -55,7 +70,18 @@ const Tabs = () => {
         options={{
           tabBarIcon: ({ focused }) =>
             focused ? (
-              <Foundation name="shopping-cart" size={24} color="black" />
+              <View
+                style={{
+                  backgroundColor: Colors.primary,
+                  width: 40,
+                  height: 40,
+                  borderRadius: 30,
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <Foundation name="shopping-cart" size={24} color="white" />
+              </View>
             ) : (
               <Foundation name="shopping-cart" size={24} color="grey" />
             ),
@@ -67,7 +93,18 @@ const Tabs = () => {
         options={{
           tabBarIcon: ({ focused }) =>
             focused ? (
-              <Ionicons name="ios-person" size={24} color="black" />
+              <View
+                style={{
+                  backgroundColor: Colors.primary,
+                  width: 40,
+                  height: 40,
+                  borderRadius: 30,
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <Ionicons name="ios-person" size={24} color="white" />
+              </View>
             ) : (
               <Ionicons name="ios-person-outline" size={24} color="grey" />
             ),

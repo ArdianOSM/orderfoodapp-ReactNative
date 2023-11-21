@@ -14,7 +14,11 @@ const Header = () => {
       <Text style={{ fontSize: 35 }}>Menu</Text>
       <Image
         source={require("../assets/lady.jpg")}
-        style={{ width: 50, height: 45, borderRadius: 50 }}
+        style={{ width: 40,
+          height: 40,
+          borderRadius: 30,
+          alignItems: "center",
+          justifyContent: "center", }}
       />
     </View>
   );
