@@ -26,7 +26,7 @@ const Category = () => {
             setselected(index);
           }}
           activeOpacity={0.9}
-          style={{ margin: 10,height:100 }}
+          style={{ margin: 10,height:120 }}
         >
           <View
             style={{
