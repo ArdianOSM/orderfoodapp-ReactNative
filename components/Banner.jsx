@@ -4,8 +4,10 @@ import { Colors } from "react-native/Libraries/NewAppScreen";
 
 const Banner = () => {
   return (
-    <View style={{ gap: 15,height:215}}>
-      <Text style={{ fontSize: 20,fontWeight:'bold',color:'orange'  }}>Promocion!!</Text>
+    <View style={{ gap: 15, height: 215 }}>
+      <Text style={{ fontSize: 20, fontWeight: "bold", color: "orange" }}>
+        Promocion!!
+      </Text>
       <View
         style={{
           backgroundColor: Colors.primary,
@@ -14,12 +16,10 @@ const Banner = () => {
           paddingHorizontal: 20,
           flexDirection: "row",
           paddingVertical: 20,
-          justifyContent:'space-between',
-          
+          justifyContent: "space-between",
         }}
       >
-        
-        <View style={{ gap: 12, }}>
+        <View style={{ gap: 12 }}>
           <Text style={{ fontSize: 15, color: "white" }}>Ofertat Ditore!</Text>
           <Text style={{ fontSize: 19, color: "white", fontWeight: "bold" }}>
             French Fries Falas!
@@ -29,7 +29,10 @@ const Banner = () => {
           </Text>
         </View>
 
-        <Image style={{width:100,height:100,}} source={require('../assets/FrenchFries.png')}/>
+        <Image
+          style={{ width: 100, height: 100 }}
+          source={require("../assets/FrenchFries.png")}
+        />
       </View>
     </View>
   );

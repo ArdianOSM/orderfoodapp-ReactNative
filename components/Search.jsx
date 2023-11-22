@@ -11,11 +11,10 @@ const Search = () => {
         borderRadius: 50,
         flexDirection: "row",
         alignItems: "center",
-        paddingHorizontal: 15
-        
+        paddingHorizontal: 15,
       }}
     >
-      <Feather name="search" size={24} color="black" />
+      <Feather name="search" size={24} color="white" />
       <TextInput style={{ flex: 0.9, fontSize: 17 }} placeholder="Search" />
     </View>
   );

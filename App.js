@@ -5,6 +5,7 @@ import Home from "./Screens/Home";
 import Welcome from "./Screens/Welcome";
 import Tabs from "./Screens/Tabs";
 import Details from "./Screens/Details";
+import Cart from "./Screens/Cart";
 
 export default function App() {
   const Stack = createNativeStackNavigator();
@@ -24,6 +25,11 @@ export default function App() {
         <Stack.Screen
           name="Details"
           component={Details}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Cart"
+          component={Cart}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>

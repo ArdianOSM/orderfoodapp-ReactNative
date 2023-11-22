@@ -26,7 +26,7 @@ const Category = () => {
             setselected(index);
           }}
           activeOpacity={0.9}
-          style={{ margin: 10,height:120 }}
+          style={{ margin: 10, height: 120 }}
         >
           <View
             style={{
@@ -36,8 +36,6 @@ const Category = () => {
               justifyContent: "center",
               alignItems: "center",
               borderRadius: 40,
-              
-            
             }}
           >
             <Image

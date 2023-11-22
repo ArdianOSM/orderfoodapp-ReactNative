@@ -8,21 +8,22 @@ const Header = () => {
       style={{
         flexDirection: "row",
         justifyContent: "space-between",
-        height:80,
+        height: 80,
         alignItems: "center",
-        
-        
       }}
     >
-      <Text style={{ fontSize: 35,fontWeight:'bold',color:Colors.primary }}>Menu</Text>
+      <Text style={{ fontSize: 35, fontWeight: "bold", color: Colors.primary }}>
+        Menu
+      </Text>
       <Image
         source={require("../assets/lady.jpg")}
-        style={{ width: 40,
+        style={{
+          width: 40,
           height: 40,
           borderRadius: 30,
           alignItems: "center",
           justifyContent: "center",
-         }}
+        }}
       />
     </View>
   );

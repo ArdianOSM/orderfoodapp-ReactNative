@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { View, Text, ScrollView, Image, TouchableOpacity } from "react-native";
 import { Colors } from "react-native/Libraries/NewAppScreen";
 import { FontAwesome } from "@expo/vector-icons";
 import { AntDesign } from "@expo/vector-icons";
+import { useNavigation } from "@react-navigation/native";
 
-const Details = ({route}) => {
-  const content =route.params.data
-  
+const Details = ({ route }) => {
+  const content = route.params.data;
+  const nav = useNavigation();
+  const [num, setnum] = useState(1);
+
   return (
     <ScrollView style={{ backgroundColor: Colors.primary }}>
       <View
@@ -135,13 +138,16 @@ const Details = ({route}) => {
         </View>
 
         <TouchableOpacity
+          onPress={() => {
+            nav.navigate("Cart");
+          }}
           style={{
             backgroundColor: Colors.primary,
             height: 55,
             borderRadius: 50,
             justifyContent: "center",
             alignItems: "center",
-            marginTop:15,
+            marginTop: 15,
           }}
         >
           <Text style={{ color: "white", fontSize: 16, fontWeight: "bold" }}>
